@@ -19,19 +19,19 @@ class TodoRouter {
   }
 
   async post(req, res) {
-    this.note.add(req.body.note, req.auth.user);
+    await this.note.add(req.body.note, req.auth.user);
     let _note = await this.note.showAll(req.auth.user);
     res.json(_note);
   }
 
   async put(req, res) {
-    this.note.update(req.params.id, req.body.note, req.auth.user);
+    await this.note.update(req.params.id, req.body.note, req.auth.user);
     let _note = await this.note.showAll(req.auth.user);
     res.json(_note);
   }
 
   async delete(req, res) {
-    this.note.remove(req.params.id, req.auth.user);
+    await this.note.remove(req.params.id, req.auth.user);
     let _note = await this.note.showAll(req.auth.user);
     res.json(_note);
   }
