@@ -40,6 +40,7 @@ $(() => {
 
 //display notes
 function reloadNotes(noteData) {
-  console.log("noteData : " + noteData);
-  $("#notes").html(noteTemplate({ note: noteData }));
+  var note = JSON.stringify(noteData);
+  var notes = JSON.parse(note);
+  $("#notes").html(noteTemplate({ notes }));
 }
