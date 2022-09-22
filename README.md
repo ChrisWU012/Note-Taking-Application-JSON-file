@@ -1,4 +1,4 @@
-# Note Taking Application with Database
+# Note Taking Application with JSON-file Storage
 
 This application allows you to add notes.
 <br/>
