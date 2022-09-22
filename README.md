@@ -2,7 +2,7 @@
 
 This application allows you to add notes.
 <br/>
-This app used: handlebars to render pages, JSON file as the local storage, AuthBasic to verify login users.
+This app used: handlebars to render pages, JSON file as the local storage, BasicAuth to verify login users.
 
 <br/>
 What this app can't do: register new user, hash password, save data in Database
